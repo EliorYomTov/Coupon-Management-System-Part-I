@@ -38,10 +38,10 @@ public class CouponExpirationDailyJob implements Runnable {
 				couponDAO.CouponExpirationDailyJob();
 				
 				/* Delete coupns expired every 24 hours */
-				Thread.sleep(1000 * 60 * 60 * 24);
+				//Thread.sleep(1000 * 60 * 60 * 24);
 				
 				/* Delete coupns expired - Test */
-				//Thread.sleep(1000 * 30);
+				Thread.sleep(1000 * 30);
 				
 			} catch (InterruptedException e) {
 			} catch (SQLException e) {

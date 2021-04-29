@@ -23,7 +23,7 @@ public class AdminFacade extends ClientFacade {
 
 	@Override
 	public boolean login(String email, String password) throws SQLException, InterruptedException {
-		return email == "admin@admin.com" && password == "admin";
+		return email.equalsIgnoreCase("admin@admin.com") && password.equalsIgnoreCase("admin");
 	}
 
 	public void addCompany(Company company) throws SQLException, InterruptedException, illegalOperationException {
